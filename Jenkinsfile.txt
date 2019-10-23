@@ -1,0 +1,15 @@
+pipeline {
+	agent any 
+	stages{
+		stage('1'){
+			steps {
+				echo 'hello,welcome'
+			}
+		}	
+		stage('2'){
+			steps {
+				sh 'salam.py'
+			}	
+		}
+	}
+}
