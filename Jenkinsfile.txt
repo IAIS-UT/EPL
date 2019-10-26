@@ -1,0 +1,19 @@
+pipeline {
+	agent any 
+	stages{
+		stage('1'){
+			steps {
+				echo 'Starting ...'
+				git branch: 'pipeline_test', url: 'https://github.com/IAIS-UT/EPL.git'
+				echo 'Connected to git !'
+			}
+		}
+		stage('2'){
+			steps {
+				echo 'Running shell script ...'
+				sh label: '', script: 'test1.sh'
+				echo 'Done !'
+			}	
+		}
+	}
+}
