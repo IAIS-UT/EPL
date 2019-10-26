@@ -1,0 +1,15 @@
+pipeline {
+	agent any 
+	stages{
+		stage('1'){
+			steps {
+				echo 'hello'
+			}
+		}	
+		stage('2'){
+			steps {
+				bat label: '', script: 'salam.bat'
+			}	
+		}
+	}
+}
