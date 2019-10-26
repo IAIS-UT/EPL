@@ -1,3 +1,0 @@
-SERVER="172.17.0.56"
-USR="ut"
-ssh $USR@$SERVER
