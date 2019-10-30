@@ -11,7 +11,7 @@ pipeline {
 		stage('2'){
 			steps {
 				echo 'Running shell script ...'
-				sh label: '', script: 'test1.sh'
+				bat label: '', script: 'test1.bat'
 				echo 'Done !'
 			}	
 		}
